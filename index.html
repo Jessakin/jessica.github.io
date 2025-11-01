@@ -1,15 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<body>
-		<navbar>
-			<a class="active" href="https://jessakin.github.io/portfolio/index.html">Home</a>
-			<ralign>
-				<a href="https://jessakin.github.io/portfolio/about-me.html">About Me</a>
-				<a href="https://jessakin.github.io/portfolio/projects.html">Projects</a>
-				<a href="https://jessakin.github.io/portfolio/resume.html">Resume</a>
-				<a href="https://jessakin.github.io/portfolio/contact.html">Contact</a>
-			</ralign>
-		</navbar>
+		<ul>
+			<li><a class="active" href="https://jessakin.github.io/portfolio/index.html">Home</a></li>
+			<li style="float:right"><a href="#https://jessakin.github.io/portfolio/contact.html">Contact</a></li>
+			<li style="float:right"><a href="#https://jessakin.github.io/portfolio/resume.html">Resume</a></li>
+			<li style="float:right"><a href="#https://jessakin.github.io/portfolio/projects.html">Projects</a></li>
+			<li style="float:right"><a href="https://jessakin.github.io/portfolio/about-me.html">About Me</a></li>
+		</ul>
 		<main>
 			<p>Hello!  My name is <b>Jessica Buhler</b>.  I'm a computer networking major from Kansas that enjoys expanding my knowledge with deepening my study with routing and switching.  I also dabble with web dev, electronic repair, and media creation in my spare time.  On this site, you can see what I have worked on!</p>
 		</main>
@@ -17,5 +15,49 @@
 			<p><b>© 2025 Jessica Buhler.  All rights reserved.</b></p>
 		</footer>
 	</body>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		h2, p {
+			margin: 10px;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+		}
+
+		ul li {
+			float: left;
+		}
+
+		ul li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		ul li a:hover:not(.active) {
+			background-color: #111111;
+		}
+
+		ul li a.active {
+			background-color: #04AA6D;
+		}
+
+		footer {
+			display: flex;
+			justify-content: center;
+		}
+	</style>
 </html>
+
 
