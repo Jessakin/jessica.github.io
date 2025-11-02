@@ -69,17 +69,24 @@
 			background-color: #62b072;
 		}
 
-		img {
+		main {
 			display: flex;
-			flex-flow: row wrap;
-			flex: 200px;
-			margin: 15px;
+			gap: 28px;
+			flex-direction: row;
+			justify-content: space-between;
+			resize: both;
+			overflow: auto;
+		}
+		img {
+			max-width: 50%;
+			flex: 1 1 50%;
+			word-break: break-word;
 		}
 		
 		text {
-			display: flex;
-			flex-flow: row wrap;
-			flex: 200px;
+			max-width: 50%;
+			flex: 1 1 50%;
+			word-break: break-word;
 		}
 		
 		footer {
@@ -92,6 +99,7 @@
 		}
 	</style>
 </html>
+
 
 
 
