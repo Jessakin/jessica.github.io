@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<title>Jessica Buhler Portfolio</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -8,14 +9,34 @@
 	<body>
 		<ul>
 			<li><a class="active" href="https://jessakin.github.io/portfolio/index.html">Home</a></li>
-			<li style="float:right"><a href="https://jessakin.github.io/portfolio/contact.html">Contact</a></li>
+			<li style="float:right"><a href="#contact">Contact</a></li>
 			<li style="float:right"><a href="https://jessakin.github.io/portfolio/resume.html">Resume</a></li>
 			<li style="float:right"><a href="https://jessakin.github.io/portfolio/projects.html">Projects</a></li>
 			<li style="float:right"><a href="https://jessakin.github.io/portfolio/about-me.html">About Me</a></li>
 		</ul>
 		<main>
-			<p>Hello!  My name is <b>Jessica Buhler</b>.  I'm a computer networking major from Kansas that enjoys expanding my knowledge with deepening my study with routing and switching.  I also dabble with web dev, electronic repair, and media creation in my spare time.  On this site, you can see what I have worked on!</p>
+			<img src="index.png">
+			<text>
+				<p>Hello!  My name is <b>Jessica Buhler</b>.</p>  
+				<p>I'm a computer networking major from Kansas that enjoys expanding my knowledge with deepening my study with routing and switching.  I also dabble with web dev, electronic repair, and media creation in my spare time.</p>
+				<p>On this site, you can see what I have worked on!</p>
+			</text>
 		</main>
+		<contact id="contact">
+			<div id="mail">
+				<h2>Mailing Address</h2>
+				<p>1585 P Rd</p>
+				<p>Morland, KS 67650</p>
+			</div>
+			<div id="email">
+				<h2>E-Mail</h2>
+				<a href="mailto:jessabuhler@gmail.com">JessaBuhler@gmail.com</a>
+			</div>
+			<div id="phone">
+				<h2>Mobile Phone</h2>
+				<a href="tel:+17856272086">(785) 627-2086</a>
+			</div>
+		</contact>
 		<footer>
 			<p class="footer"><b>© 2025 Jessica Buhler.  All rights reserved.</b></p>
 		</footer>
@@ -26,12 +47,13 @@
 			padding: 0;
 		}
 
-		h2, p:not(.footer) {
+		text {
 			font-family: "Koh Santepheap", serif;
 			font-weight: 100;
 			font-style: normal;
-			font-size: calc((.4em + 1.2vmin) + (.4em + 1.2vmax));
-			margin: 15px;
+			font-size: calc((.5em + 1.3vmin) + (.5em + 1.3vmax));
+			word-break: break-word;
+			margin-top: -35px;
 		}
 
 		ul {
@@ -66,6 +88,72 @@
 			background-color: #62b072;
 		}
 
+		@media (orientation:landscape) {
+			main {
+				flex-direction: row;
+			}
+			text {
+				max-width: 57%;
+				flex: 1 1 57%;
+			}
+		}
+
+		@media (orientation:portrait) {
+			main {
+				flex-direction: column;
+				justify-content: center;
+			}
+			text {
+				max-width: 90%;
+				flex: 1 1 90%;
+			}
+		}
+		
+		main {
+			display: flex;
+			gap: 28px;
+			justify-content: space-between;
+			resize: both;
+			overflow: auto;
+			margin-left: 25px
+		}
+		
+		img {
+			max-width: 43%;
+			flex: 1 1 43%;
+			height: 80vh;
+			object-fit: contain;
+			aspect-ratio: 1/1;
+		}
+
+		contact {
+			display: flex;
+			gap: 28px;
+			justify-content: space-between;
+			resize: both;
+			overflow: auto;
+			margin-left: 25px
+			margin-right: 25px
+		}
+
+		#mail, #email, #phone {
+			max-width: 33%;
+			flex: 1 1 33%;
+			font-family: "Koh Santepheap", serif;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 1.0;
+			font-size: calc((.2em + .5vmin) + (.2em + .5vmax));
+			margin-left: 25px;
+			margin-top: -25px;
+		}
+
+		#mail a, #email a, #phone a, #mail p, #email p, #phone p, #mail h2, #email h2, #phone h2 {
+			text-decoration: none;
+			color: black;
+			line-height: 1.0;
+		}
+		
 		footer {
 			font-family: "Koh Santepheap", serif;
 			font-weight: 400;
