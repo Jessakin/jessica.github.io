@@ -22,6 +22,21 @@
 				<p>On this site, you can see what I have worked on!</p>
 			</text>
 		</main>
+		<div id="contact">
+			<div id="mail">
+				<h2>Mailing Address</h2>
+				<p>1585 P Rd</p>
+				<p>Morland, KS 67650</p>
+			</div>
+			<div id="email">
+				<h2>E-Mail</h2>
+				<a href="mailto:jessabuhler@gmail.com">JessaBuhler@gmail.com</a>
+			</div>
+			<div id="phone">
+				<h2>Mobile Phone</h2>
+				<a href="tel:+17856272086">(785) 627-2086</a>
+			</div>
+		</div>
 		<footer>
 			<p class="footer"><b>© 2025 Jessica Buhler.  All rights reserved.</b></p>
 		</footer>
@@ -32,7 +47,7 @@
 			padding: 0;
 		}
 
-		h2, p:not(.footer) {
+		h2, p:not(.footer):not() {
 			font-family: "Koh Santepheap", serif;
 			font-weight: 100;
 			font-style: normal;
@@ -64,7 +79,7 @@
 			text-decoration: none;
 		}
 		
-		ul li a:hover:not(.active) {
+		ul li a:hover:not(.active):not(#contact) {
 			background-color: #235c2f;
 		}
 
@@ -113,6 +128,8 @@
 		text {
 			word-break: break-word;
 		}
+
+		
 		
 		footer {
 			font-family: "Koh Santepheap", serif;
@@ -124,6 +141,7 @@
 		}
 	</style>
 </html>
+
 
 
 
