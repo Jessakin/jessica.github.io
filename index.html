@@ -72,15 +72,27 @@
 			background-color: #62b072;
 		}
 
+		@media (orientation:landscape) {
+			main {
+				flex-direction: row;
+			}
+		}
+
+		@media (orientation:portrait) {
+			main {
+				main: flex-direction: column;
+			}
+		}
+		
 		main {
 			display: flex;
 			gap: 28px;
-			flex-direction: row;
 			justify-content: space-between;
 			resize: both;
 			overflow: auto;
 			margin-left: 25px
 		}
+		
 		img {
 			max-width: 43%;
 			flex: 1 1 43%;
@@ -105,6 +117,7 @@
 		}
 	</style>
 </html>
+
 
 
 
