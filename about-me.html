@@ -62,7 +62,6 @@
 			font-style: normal;
 			font-size: calc((.4em + 1vmin) + (.4em + 1vmax));
 			word-break: break-word;
-			margin-top: -35px;
 			margin-right: 25px;
 		}
 
@@ -102,12 +101,18 @@
 			main {
 				flex-direction: row;
 			}
+			text {
+				margin-top: -35px;
+			}
 		}
 
 		@media (orientation:portrait) {
 			main {
 				flex-direction: column;
 				justify-content: center;
+			}
+			text {
+				margin-top: 0px;
 			}
 		}
 		
@@ -168,6 +173,7 @@
 		}
 	</style>
 </html>
+
 
 
 
