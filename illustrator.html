@@ -18,7 +18,7 @@
 		</ul>
 		<main>
 			<div class = "grid">
-				<img src = "">
+				<img src = "illustrator/JessicaBuhlerTomatoes.png">
 			</div>
 		</main>
 		<contact id="contact">
@@ -109,13 +109,15 @@
 			overflow: auto;
 			margin-left: 25px
 		}
-		
-		img {
-			max-width: 43%;
-			flex: 1 1 43%;
-			height: 80vh;
-			object-fit: contain;
-			aspect-ratio: 1/1;
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 10px;
+		}
+
+		.grid img {
+			width: 100%;
 		}
 
 		contact {
